@@ -42,5 +42,5 @@ as I have been doin websites for quite a time now I just tried out coding front-
 ## Author
 
 - Website - [Glen-Clarence](https://www.your-site.com)
-- Frontend Mentor - [@Glen-Clarence@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Glen-Clarence](https://www.frontendmentor.io/profile/yourusername)
 <!-- - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
