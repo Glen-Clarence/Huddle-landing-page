@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  background-image: url("/images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674bb1;
+  background-position: left;
+  background-blend-mode: overlay;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32em;
+}
+
+.hero .hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1em 0 1em;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.hero .hero-text p {
+  margin: 1em 3em 0 3em;
+  color: #fff;
+  letter-spacing: 0.9px;
+}
+
+.hero .hero-text button {
+  margin: 1em 3em 0 3em;
+  padding: 1em 5em 1em 5em;
+  color: #674bb1;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: inherit;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border: none;
+  height: 57px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.hero .hero-text button:hover {
+  background-color: #e980e7;
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 15px #313131;
+          box-shadow: 2px 2px 15px #313131;
+  cursor: pointer;
+}
+
+.hero .flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header {
+  margin-top: 1em;
+}
+
+header .navbar img {
+  width: 150px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 95vw;
+}
+
+.icon-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 0.7em;
+  font-size: 2rem;
+}
+
+.icon-footer i {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.icon-footer i:hover {
+  color: #F953C1;
+  border-color: #F953C1;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+  :root, html {
+    font-size: 8px;
+  }
+  body {
+    background-image: url("/images/bg-mobile.svg");
+  }
+  .hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: unset;
+    margin-top: 4vh;
+  }
+  .hero .flex-item {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .hero .flex-item h1 {
+    text-align: center;
+  }
+  .hero .flex-item p {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.9;
+  }
+  .hero .hero-text {
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero-text button {
+    height: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.7rem;
+  }
+  .icon-footer {
+    margin-top: 5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icon-footer i {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none;
+  }
+  :root, html {
+    font-size: 10px;
+  }
+  body {
+    background-image: url("/images/bg-mobile.svg");
+  }
+  .hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: unset;
+    margin-top: 4vh;
+  }
+  .hero .flex-item {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .hero .flex-item h1 {
+    text-align: center;
+  }
+  .hero .flex-item p {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.9;
+  }
+  .hero .hero-text {
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero-text button {
+    height: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.7rem;
+  }
+  .icon-footer {
+    margin-top: 5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icon-footer i {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

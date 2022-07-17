@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  // font-size: 100%;
+  background-image: url("/images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674bb1;
+  background-position: left;
+  background-blend-mode: overlay;
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+main {
+  height: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32em;
+  .hero-text {
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      color: #fff;
+      font-size: 3rem;
+      margin: 0 1em 0 1em;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+    p {
+      margin: 1em 3em 0 3em;
+      color: #fff;
+      letter-spacing: 0.9px;
+    }
+    button {
+      margin: 1em 3em 0 3em;
+      padding: 1em 5em 1em 5em;
+      color: #674bb1;
+      background-color: #fff;
+      border-radius: 50px;
+      font-size: 16px;
+      font-family: inherit;
+      box-shadow: unset;
+      border: none;
+      height: 57px;
+      transition: 0.2s ease;
+      &:hover {
+        background-color: #e980e7;
+        color: #fff;
+        box-shadow: 2px 2px 15px #313131;
+        cursor: pointer;
+      }
+    }
+  }
+  .flex-item {
+    flex: 1;
+  }
+}
+header {
+  margin-top: 1em;
+  .navbar {
+    img {
+      width: 150px;
+    }
+  }
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 95vw;
+}
+.icon-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7em;
+  font-size: 2rem;
+  i {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #F953C1;
+      border-color: #F953C1;
+      cursor: pointer;
+    }
+  }
+}
+///media
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none ;
+  }
+  :root,html {
+    font-size: 8px;
+  }
+  body {
+    background-image: url('/images/bg-mobile.svg');
+  }
+  .hero {
+    flex-wrap: wrap;
+    height: unset;
+    margin-top: 4vh;
+    .flex-item {
+      flex: unset;
+      h1 {
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.9;
+      }
+    }
+    .hero-text {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+      }
+      }
+  }
+  .icon-footer {
+    margin-top: 5em;
+    justify-content: center;
+    i{
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none ;
+  }
+  :root,html {
+    font-size: 10px;
+  }
+  body {
+    background-image: url('/images/bg-mobile.svg');
+  }
+  .hero {
+    flex-wrap: wrap;
+    height: unset;
+    margin-top: 4vh;
+    .flex-item {
+      flex: unset;
+      h1 {
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.9;
+      }
+    }
+    .hero-text {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+      }
+      }
+  }
+  .icon-footer {
+    margin-top: 5em;
+    justify-content: center;
+    i{
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+} 
